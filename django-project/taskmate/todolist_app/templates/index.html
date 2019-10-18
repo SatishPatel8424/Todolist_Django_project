@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+<title> welcome to Taskmate! </title>
+{% endblock title  %}
+
+{% block content %}
+
+    <div class="container-fluid" mt-5>
+    <img class="w3-image" src="{% static 'images/img2.jpg' %}" alt="Todolist " width="1500" height="500">
+    
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>S@tish P@tel</b></span> <span class="w3-hide-small w3-text-light-grey">Welcome to TodoList</span></h1>
+    <br> <br> 
+    
+    <center><a href="{% url 'todolist' %}" <button type="button" class="btn btn-primary btn-lg" >Lets! Get Started!</button> </a></center>
+  </div>
+ 
+
+    </div>
+    <hr>
+{% endblock content %}
+
+
